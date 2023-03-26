@@ -74,12 +74,12 @@
 	var number = document.getElementById('number').value;
 	
 	// create CSV data string
-	var data = "Name,Email,number\n" + name + "," + email + "," + message + "\n";
+	var data = "Name,Email,number\n" + name + "," + email + "," +number + "\n";
 	
 	// create download link
 	var downloadLink = document.createElement("a");
 	downloadLink.href = "data:text/csv;charset=utf-8," + encodeURIComponent(data);
-	downloadLink.download = "form-submissions.csv";
+	downloadLink.download = "form-submissions.csv"
 	
 	// trigger download
 	document.body.appendChild(downloadLink);
